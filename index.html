@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>CP Homepage UI Clone</title>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- Load 'Inter' from Google Fonts CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1 class="left">
+          <img src="assets/imgg.webp" alt="Logo" />
+          <img src="assets/programmer.jpg" alt="Logo" />
+        </h1>
+
+        <nav class="middle">
+          <ul>
+            <li><a href="#">Problems</a></li>
+            <li><a href="#">Solution</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="right">
+          <a class="conf">
+            <img src="assets/special-button.svg" alt="Special Conference" />
+            <span>Special </span>
+          </a>
+          <img class="avatar" src="assets/avatar.svg" alt="Avatar" />
+        </div>
+      </header>
+
+      <footer>Explore the Programming world</footer>
+      <img src="data:image/png;base64,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" alt="CP">
+
+  <br><br>
+  <li>   <button type="button" onclick="location.href='https://codeforces.com/contest/1709/problem/A'">A. Three Doors</button>
+      <button type="button" onclick="location.href='https://codeforces.com/contest/1709/problem/B'">B. Also Try Minecraft</button>
+      <button type="button" onclick="location.href='https://codeforces.com/contest/1709/problem/C'">C. Recover an RBS</button>
+      <button type="button" onclick="location.href='https://codeforces.com/contest/1709/problem/D'">D. Rorororobot</button>
+      <button type="button" onclick="location.href='https://codeforces.com/contest/1709/problem/E'">E. XOR Tree</button>
+      <button type="button" onclick="location.href='https://codeforces.com/contest/1709/problem/F'">F. Multiset of Strings</button>
+      <br>
+      <br><br><br><br>
+      <li>
+        <button type="button" onclick="location.href='https://codeforces.com/problemset/problem/1473/B'">B. String LCM</button>
+        <button type="button" onclick="location.href='https://codeforces.com/problemset/problem/1399/B'">B. Gifts Fixing</button>
+        <button type="button" onclick="location.href='https://codeforces.com/problemset/problem/1607/C'">C. Minimum Extraction</button>
+        <button type="button" onclick="location.href='https://codeforces.com/problemset/problem/1399/A'">A. Remove Smallest</button>
+        <button type="button" onclick="location.href='https://codeforces.com/problemset/problem/1622/B'">B. Berland Music</button>
+        <button type="button" onclick="location.href='https://codeforces.com/problemset/problem/99/A'">A. Help Far Away Kingdom</button>
+      </li>
+    </li>
+    <br><br><br><br>
+      <h1>SOLUTIONS</h1>
+    <a href="https://github.com/18-RAJAT/CP-contest-ONLINE-JUDGE-">
+      <i class="fa-brands fa-github"></i>
+    </a>
+      
+    </div>
+  </body>
+</html>
